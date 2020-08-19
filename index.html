@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mindspark Events</title>
+    <meta name="description" content="Decorative &amp; interactive isometric &amp; 3D grids." />
+    <meta name="keywords" content="isometric, grid, images, masonry, perspective" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7243260-2']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body class="demo-1">
+    <main>
+        <header class="header">
+            <h1>EVENTS</h1>
+
+        </header>
+        <div class="isolayer isolayer--scroll1 isolayer--shadow">
+            <ul class="grid grid--effect-flip">
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/forefathers">
+                        <img class="grid__img layer" src="./module_images/Accelero.png" alt=" 01" />
+                        <span class="grid__title">Accelero</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/JulienLavallee">
+                        <img class="grid__img layer" src="./module_images/Amuzia.png" alt="021" />
+                        <span class="grid__title">Amuzia</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/creativemints">
+                        <img class="grid__img layer" src="./module_images/Codifica.png " alt=" 03" />
+                        <span class="grid__title">Codifica</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/Radium">
+                        <img class="grid__img layer" src="./module_images/Dynamus.png" alt="042" />
+                        <span class="grid__title">Dynamus</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/forefathers">
+                        <img class="grid__img layer" src="./module_images/Illuminati.png" alt="011" />
+                        <span class="grid__title">Illuminati</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/JulienLavallee">
+                        <img class="grid__img layer" src="./module_images/Ingenia.png" alt=" 02" />
+                        <span class="grid__title">Ingenia</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/creativemints">
+                        <img class="grid__img layer" src="./module_images/Interpreta.png" alt="031" />
+                        <span class="grid__title">Interpreta</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/Radium">
+                        <img class="grid__img layer" src="./module_images/Logica.png" alt=" 04" />
+                        <span class="grid__title">Logica</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/forefathers">
+                        <img class="grid__img layer" src="./module_images/Robotica.png" alt="012" />
+                        <span class="grid__title">Robotica</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/JulienLavallee">
+                        <img class="grid__img layer" src="./module_images/Structura.png" alt="022" />
+                        <span class="grid__title">Structura</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/creativemints">
+                        <img class="grid__img layer" src="./module_images/Substantia.png" alt="032" />
+                        <span class="grid__title">Substantia</span>
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="https://dribbble.com/forefathers">
+                        <img class="grid__img layer" src="./module_images/Voltus.png" alt="013" />
+                        <span class="grid__title">Voltus</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/animOnScroll.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function () {
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            [].slice.call(document.querySelectorAll('.isolayer')).forEach(function (el) {
+                new IsoGrid(el, {
+                    type: 'scrollable',
+                    transform: 'translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg)',
+                    stackItemsAnimation: {
+                        properties: function (pos) {
+                            return {
+                                translateZ: (pos + 1) * 50,
+                                rotateZ: getRandomInt(-3, 3)
+                            };
+                        },
+                        options: function (pos, itemstotal) {
+                            return {
+                                type: dynamics.bezier,
+                                duration: 500,
+                                points: [{ "x": 0, "y": 0, "cp": [{ "x": 0.2, "y": 1 }] }, { "x": 1, "y": 1, "cp": [{ "x": 0.3, "y": 1 }] }],
+                                //delay: (itemstotal-pos-1)*40
+                            };
+                        }
+                    },
+                    onGridLoaded: function () {
+                        classie.add(document.body, 'grid-loaded');
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
