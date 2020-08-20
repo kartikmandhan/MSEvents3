@@ -190,7 +190,7 @@
     // set the height of the pseudoScroller (grid´s height + additional space between the top of the rotated isolayerEl and the page - value set for the translation on the Y axis)
     this.pseudoScrollerEl.style.height =
       this.gridEl.offsetHeight +
-      getComputedTranslateY(this.isolayerEl) * Math.sqrt(2) +
+      getComputedTranslateY(this.isolayerEl) * Math.sqrt(8) +
       "px";
   };
 
