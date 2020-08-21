@@ -1,7 +1,6 @@
 (function (window) {
   "use strict";
 
-  // from: http://stackoverflow.com/a/21913575
   function getComputedTranslateY(obj) {
     if (!window.getComputedStyle) return;
     var style = getComputedStyle(obj),
@@ -12,10 +11,6 @@
     mat = transform.match(/^matrix\((.+)\)$/);
     return mat ? parseFloat(mat[1].split(", ")[5]) : 0;
   }
-
-  /**********************************************/
-  /** https://gist.github.com/desandro/1866474 **/
-  /**********************************************/
   var lastTime = 0;
   var prefixes = "webkit moz ms o".split(" ");
   // get unprefixed rAF and cAF, if present
