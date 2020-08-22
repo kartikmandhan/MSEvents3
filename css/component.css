@@ -439,25 +439,29 @@ body {
 	
   } */
   0% {
-    fill: #00a8cc;
+    fill: #03045e;
   }
   20% {
-    fill: #0c7b93;
+    fill: #48cae4;
   }
   40% {
-    fill: #0f4c75;
+    fill: #00b4d8;
   }
   60% {
-    fill: #142850;
+    fill: #0077b6;
   }
   80% {
-    fill: #000272;
+    fill: #023e8a;
   }
   100% {
-    fill: #111d5e;
+    fill: #03045e;
   }
 }
 @media only screen and (max-width: 769px) {
+  .grid__title {
+    bottom: -20%;
+    opacity: 1;
+  }
   #Layer_1 {
     top: 5%;
     position: fixed;
@@ -496,4 +500,19 @@ body {
 }
 .scroll-downs h6 {
   margin: 1.2rem;
+}
+.grid__item:nth-child(5n + 1) img {
+  background: #fee440;
+}
+.grid__item:nth-child(5n + 3) img {
+  background: #fa26a0;
+}
+.grid__item:nth-child(5n + 4) img {
+  background: #73f460;
+}
+.grid__item:nth-child(5n + 2) img {
+  background: #f1813a;
+}
+.grid__item:nth-child(5n) img {
+  background: #00f5d4;
 }
