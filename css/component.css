@@ -65,13 +65,13 @@ body {
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
 }
-
-.grid__item:hover .grid__title {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+@media (hover: hover) {
+  .grid__item:hover .grid__title {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-
 .layer {
   position: relative;
   display: block;
