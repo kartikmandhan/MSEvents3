@@ -547,20 +547,13 @@ h1 {
   opacity: 0;
 }
 
-.grid__item:hover .overlay {
-  /* transform: scale(4) translateZ(0); */
-  height: 200px;
-  width: 200px;
+.grid__item:hover {
+  transform: scale(1.2) translateZ(50px);
+  transition: 300ms ease-in;
 }
 
 .grid__item:hover p {
   color: rgb(200, 200, 200, 0.9);
-}
-
-.grid__item:active {
-  transform: scale(1) translateZ(0);
-  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
-    0 15px 24px var(--box-shadow-color);
 }
 
 .details {
@@ -622,7 +615,7 @@ h1 {
 
 /* The actual tooltip with a dynamic width */
 [data-tooltip]:before {
-  z-index: 60000;
+  z-index: 90000;
   content: attr(data-tooltip);
   padding: 10px 18px;
   min-width: 50px;
@@ -689,4 +682,9 @@ h1 {
 
 #topBtn:hover {
   background-color: #555;
+}
+@media only screen and (min-width: 1022px) {
+  .contactUs {
+    margin-left: -30%;
+  }
 }
